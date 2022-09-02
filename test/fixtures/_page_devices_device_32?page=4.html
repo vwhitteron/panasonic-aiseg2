@@ -1,0 +1,428 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta name="viewport" content="width=800" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<link href="/contents/Ver.2.82B-03/images/favicon-192x192.png" rel="icon" type="image/png" sizes="192x192" />
+<link href="/contents/Ver.2.82B-03/images/favicon-192x192.png" rel="apple-touch-icon" type="image/png" sizes="192x192" />
+<link href="/contents/Ver.2.82B-03/stylesheets/dialog.new.css" rel="stylesheet" type="text/css" />
+<link href="/contents/Ver.2.82B-03/stylesheets/common.css" rel="stylesheet" type="text/css" />
+<link href="/contents/Ver.2.82B-03/stylesheets/parts.css" rel="stylesheet" type="text/css" />
+
+<link href="/contents/Ver.2.82B-03/stylesheets/pages/devices/device/32.css" rel="stylesheet" type="text/css" />
+<link href="/contents/Ver.2.82B-03/stylesheets/pages/common/015.css" rel="stylesheet" type="text/css" />
+<link href="/contents/Ver.2.82B-03/stylesheets/popup_msg.css" rel="stylesheet" type="text/css" />
+<link href="/contents/Ver.2.82B-03/stylesheets/pages/common/017.css" rel="stylesheet" type="text/css" />
+<link href="/contents/Ver.2.82B-03/stylesheets/popup_msg.css" rel="stylesheet" type="text/css" />
+<link href="/contents/Ver.2.82B-03/stylesheets/pages/devices/device/popup_evcapacity.css" rel="stylesheet" type="text/css" />
+<link href="/contents/Ver.2.82B-03/stylesheets/popup_msg.css" rel="stylesheet" type="text/css" />
+<link href="/contents/Ver.2.82B-03/stylesheets/pages/devices/device/popup_airymode.css" rel="stylesheet"
+    type="text/css" />
+<title>機器コントロール</title>
+
+</head>
+
+<body class="pc">
+<div id="logo">&nbsp;</div>
+<div class="wrap">
+<div id="page">
+
+	
+<!-- footer -->
+<!--フッターシャドウ-->
+<div id="foot_shadow"></div>
+
+<!--フッターメニュー-->
+<div id="fmenu">
+		<div id="fmbtn_wrapper" class="">
+		<div id="fmbtn_00" class="fmbtn"><a href="/page/myhome/9" class="fmhit">&nbsp;</a></div>		<div id="fmbtn_01" class="fmbtn"><a href="/page/electricflow/111" class="fmhit">&nbsp;</a></div>		<div id="fmbtn_05" class="fmbtn"><a href="/page/graph/52111" class="fmhit">&nbsp;</a></div>		<div id="fmbtn_03" class="fmbtn"><a href="/page/devices/device/32" class="fmhit">&nbsp;</a></div>		<div id="fmbtn_08" class="fmbtn"><a href="/page/lockup/8" class="fmhit">&nbsp;</a></div>		<div id="fmbtn_04" class="fmbtn"><a href="/page/airenvironment/41" class="fmhit">&nbsp;</a></div>		<div id="fmbtn_02" class="fmbtn"><a href="/page/smartmeter/2" class="fmhit">&nbsp;</a></div>		<div id="fmbtn_06" class="fmbtn"><a href="/page/notice/63" class="fmhit">&nbsp;</a></div>		<div id="fmbtn_07" class="fmbtn"><a href="/page/setting/initial/71" class="fmhit">&nbsp;</a></div>	</div>
+	</div>
+<div id="footer">
+	
+			<div id="footer_menu" class="footer_button "><a href="javascript:void(0);" id="menu_button">メニュー</a></div>
+		<div id="footer_info" class="footer_info">&nbsp;</div>
+
+				<div id="footer_copyright" class="footer_copyright">&nbsp;</div>
+				<div id="footer_mode">デモモード</div>
+		<div id="pvlimit_label" class="button "style="display:none;">
+		<div id="pvlimit_label_text">制御期間中</div>
+		<a href="/page/common/01i" class="hit">&nbsp;</a>
+	</div>
+</div>
+
+
+<div class="contents">
+  <!-- トークン -->
+  <span class="setting_value" style="display:none;">99999</span>
+
+  <!-- header -->
+  <div id="header">
+	<div id="h_icon" class=h_icon-3>&nbsp;</div>
+	<h1 id="h_title">機器コントロール<span id="h_subtitle"></span></h1>
+	<!--パンくず-->
+	<ul id="h_breadcrumbs" class="breadcrumbs">
+ 
+				
+																<li class="h_bitem"><span></span></li>
+					 
+			 
+			</ul>
+
+	
+	<div id="h_datetime"></div>
+	<script type="text/javascript">
+		TimeInfoVariable = {};
+		TimeInfoVariable.serverTime = '{"year":"21","month":"7","day":"01","hour":"12","min":"15","sec":"30","weekday":"4"}';
+	</script>
+</div>
+
+
+  <!-- コンテンツ -->
+  <div id="main">
+    <!-- タブ -->
+    <div id="tab-area">
+      <div class="tab-set-2">
+        <div class="tab-all button tab-active"><a href="32.html" class="hit"></a></div>
+        <div class="tab-desc-1 button"><a href="javascript:onClickTab1();" class="hit"></a></div>
+      </div>
+    </div>
+
+
+    <div id="panel_1" class="panel">
+      <div id="fh"></div>
+  <div class="icon on"><!-- "" or "on" -->
+    <div class="icon_img icon_img_se_yukadan">&nbsp;</div>
+  </div>
+
+
+  <div class="kiki_title">床暖房</div>
+
+  <div class="kiki_val">
+    <div>
+      <span>停止中：</span><span>0</span>
+    </div>
+    <div>
+      <span>運転中：</span><span>1</span>
+    </div>
+  </div>
+
+  <div class="kiki_button">
+    <div class="button w154 h46 ">
+      <div class="button_text">一括停止</div>
+      <a href="javascript:onFhAllStop(99999);" class="hit">&nbsp;</a>
+    </div>
+    <div class="button w74 h46">
+      <div class="button_text">個別</div>
+      <a href="32b?track=32&individual_page=1&page=4" class="hit">&nbsp;</a>
+    </div>
+  </div>
+
+
+    </div>
+
+
+    <div id="panel_2" class="panel">
+      <div id="elseev"></div>
+<div class="icon on">
+  <div class="icon_img icon_img_ev">&nbsp;</div>
+</div>
+
+<div class="kiki_title">ELSEEV</div>
+
+<div class="kiki_state">
+  <span id="ev_ctrl" style="display:none;">stop</span>
+  <div class="state lo-w100 on">
+    充電中  </div>
+  <div class="state lo-w100">
+    普通充電  </div>
+  <span id="ev_skd" style="display:none;">1</span>
+  <div class="state lo-w100">
+      </div>
+</div>
+
+<div class="kiki_button">
+  <div class="button w100 h46 ">
+    <div class="button_text">停止</div>
+    <a href="javascript:onClickOpeMode()" class="hit">&nbsp;</a>
+  </div>
+  <div class="button w100 h46 ">
+    <div class="button_text">容量設定</div>
+    <a href="javascript:onClickEvCapacityShowPopup(true, '2')" class="hit">&nbsp;</a>
+  </div>
+  <div class="button w100 h46">
+    <span id="ev_pause" style="display:none;">1</span>
+    <div class="button_text line2">スケジュ<br />ール</div>
+    <a href="javascript:onClickEVSchedule()" class="hit">&nbsp;</a>
+  </div>
+</div>
+    </div>
+
+
+    <div id="panel_3" class="panel">
+      <div id="call"></div>
+  <div class="icon on"><!-- "" or "on" -->
+    <div class="icon_img icon_img_call">&nbsp;</div>
+  </div>
+
+  <div class="kiki_title">コール</div>
+    
+  <div class="kiki_val">
+    <div>
+      <span>直近日時：</span><span>2016/12/23 16:35</span>
+    </div>
+  </div>
+
+  <div class="battery_val"></div>
+
+  <div class="kiki_button">
+    <div class="button w74 h46">
+      <div class="button_text">一覧</div>
+      <a href="32d?page=4" class="hit">&nbsp;</a>
+    </div>
+  </div>    </div>
+
+
+    <div id="panel_4" class="panel">
+      <div id="deliverybox"></div>
+<div class="icon on">
+  <div class="icon_img icon_img_takuhai">&nbsp;</div>
+</div>
+
+<div class="kiki_title">
+  宅配ボックス</div>
+
+<div class="kiki_val">
+  <div>
+    <span class="color_red">荷物あり</span>
+  </div>
+</div>
+
+<div class="battery_val"></div>
+
+<div class="kiki_button">
+  <div class="button w154 h46">
+    <div class="button_text">着荷履歴</div>
+    <a href="32e?page=4&nodeId=39&eoj=0x002901&devType=0x12&nodeIdentNum=0x0000000000000039" class="hit">&nbsp;</a>
+  </div>
+</div>
+    </div>
+
+
+    <!-- スクロール -->
+    <div class="scroller">
+      <div class="scroll_top disable"><a href="javascript:onClickScroll('up');" class="hit">&nbsp;</a></div>
+      <div class="scroll_bar_wrap"><div class="bar_top"></div><div class="bar_bottom"></div></div>
+      <div class="scroll_bar" style="margin-top:0px;visibility: hidden;"><div class="bar_top"></div><div class="bar_bottom"></div></div>
+      <div class="scroll_bottom disable"><a href="javascript:onClickScroll('down');" class="hit">&nbsp;</a></div>
+    </div>
+
+  </div>
+  <!--End .wrap_set-->
+
+  <!-- 更新ボタン -->
+  <div id="button_update" class="button update w94 h43">
+    <div class="button_text">更新</div>
+    <a href="javascript:onCacheUpdate();" class="hit">&nbsp;</a>
+  </div>
+</div>
+
+<!-- ▽▽▽ *********************** ポップアップ *********************** ▽▽▽ -->
+<!-- 通信中PU -->
+
+<div class="popup_dialog popup_dialog_015" style="position:absolute; top:0; width:100%; height:100%; display:none;">
+<div class="popup_layer">&nbsp;</div>
+<div class="popup_base_img p_681x368">&nbsp;</div>
+<div id="popup_base" class="p_681x368">
+		
+  <!-- ダイアログ内容 -->
+  <div id="popup_detail" class="popup_detail">
+    <div class="popup_message">
+      <div class="l2_message">
+        <span id="loarder_anime_text">通信中です</span><span id="loader_anime"></span><br />
+        しばらくお待ちください。      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<!-- データ取得失敗画面(通信後PU) -->
+
+<div class="popup_dialog popup_dialog_017" style="position:absolute; top:0; width:100%; height:100%; display:none;">
+<div class="popup_layer">&nbsp;</div>
+<div class="popup_base_img p_681x368">&nbsp;</div>
+<div id="popup_base" class="p_681x368">
+
+  <!-- ダイアログ内容 -->
+  <div id="popup_detail" class="popup_detail">
+    <div class="popup_message">
+      <div class="l1_message">
+        情報取得に失敗しました。      </div>
+    </div>
+  </div>
+
+  <!--ボタン-->
+  <div id="popup_button_cb" class="button w112 h46 ">
+    <div class="button_text">了解</div>
+    <a href="javascript:onClickPopupClose('017');" class="hit">&nbsp;</a>
+  </div>
+</div>
+</div>
+
+<!-- 容量設定PU -->
+
+<div class="popup_dialog popup_dialog_evcapacity" style="position:absolute; top:0; width:100%; height:100%; display:none"; >
+<div class="popup_layer">&nbsp;</div>
+<div class="popup_base_img p_681x368">&nbsp;</div>
+
+<div id="popup_base" class="p_681x368">
+  <div id="popup_title" class="popup_title"></div>
+  <div id="popup_detail_evcapacity" class="popup_detail">
+
+    <div id="button_wrapper_evcapacity" class="button_wrapper_evcapacity ">
+      <div id="radio_1" class="radio w154 h46" value='1'>
+        <div class="button_text">倍速充電</div>
+        <a href="javascript:onClickRadioElseevCapaSetting();" class="hit">&nbsp;</a>
+      </div>
+
+      <div id="radio_2" class="radio w154 h46" value='2'>
+        <div class="button_text">普通充電</div>
+        <a href="javascript:onClickRadioElseevCapaSetting();" class="hit">&nbsp;</a>
+      </div>
+
+      <div id="radio_3" class="radio w154 h46" value='3'>
+        <div class="button_text">低速充電</div>
+        <a href="javascript:onClickRadioElseevCapaSetting();" class="hit">&nbsp;</a>
+      </div>
+      <span class="setting_value" id="setting_value_evcapa">2</span>
+    </div>
+  </div>
+
+  <div id="popup_button_cb" class="button w112 h46 popup_button_cb_evcapacity ">
+    <div class="button_text">中止</div>
+    <a href="javascript:onClickEvCapacityShowPopup(false, '0');" class="hit">&nbsp;</a>
+  </div>
+</div>
+</div>
+<!-- 共通PU(PU:充電停止確認) -->
+<div id="popup">
+	<div id="popup_layer"></div>
+	<div class="popup_base_img p_681x368"></div>
+	<div id="popup_base" class="p_681x368">
+																																	<div id='popup_detail' class='popup_detail ev_warning_contents'>
+				<div class="popup_message" id='ev_warning_message'><div class='l5_message'>充電を停止しますか？<br />充電を手動で停止する場合、<br />スケジュール制御は休止されます。<br />充電停止後にスケジュール制御を再開する場合は、<br />再度スケジュールボタンを押してください。</div></div>
+			</div>
+																						<div id='action_ev_warning' class='action_class ev_warning_contents yesno'>
+					<div class="button w112 h46 popup_button_yes ">
+						<div class="button_text">はい</div>
+						<a href="javascript:void(0);" class="hit">&nbsp;</a>
+					</div>
+					<div class="button w112 h46 popup_button_no ">
+						<div class="button_text">いいえ</div>
+						<a href="javascript:void(0);" class="hit">&nbsp;</a>
+					</div>
+				</div>
+													</div>
+</div>
+<!-- 共通PU(PU:休止再開) -->
+<div id="popup" class="popup_dialog_restart">
+	<div id="popup_layer"></div>
+	<div class="popup_base_img p_681x368"></div>
+	<div id="popup_base" class="p_681x368">
+																																	<div id='popup_detail' class='popup_detail ev_restart_contents'>
+				<div class="popup_message" id='ev_restart_message'><div class='l2_message'>現在スケジュール制御休止中です。<br />スケジュール制御を再開しますか？</div></div>
+			</div>
+																						<div id='action_ev_restart' class='action_class ev_restart_contents yesno'>
+					<div class="button w112 h46 popup_button_yes ">
+						<div class="button_text">はい</div>
+						<a href="javascript:void(0);" class="hit">&nbsp;</a>
+					</div>
+					<div class="button w112 h46 popup_button_no ">
+						<div class="button_text">いいえ</div>
+						<a href="javascript:void(0);" class="hit">&nbsp;</a>
+					</div>
+				</div>
+													</div>
+</div>
+<!-- 快適エアリー 運転切り替え -->
+
+<div class="popup_dialog popup_dialog_airymode" style="position:absolute; top:0; width:100%; height:100%; display: none">
+    <div class="popup_layer">&nbsp;</div>
+    <div class="popup_base_img p_681x368">&nbsp;</div>
+    <div id="popup_base" class="p_681x368">
+        <!-- ダイアログタイトル -->
+        <div id="popup_title" class="popup_title">運転モード</div>
+
+        <!-- ダイアログ内容 -->
+        <div id="popup_detail" class="popup_detail">
+            <div id="button_wrapper_1" class="button_wrapper_airymode">
+                <span class="setting_value" id="setting_value"></span>
+                <div class="w124 h46 radio col_1 row_1">
+                    <div class="button_text">停止</div>
+                    <a href="javascript:showPopup(false, 'airymode');" class="hit">&nbsp;</a>
+                </div>
+                <div class="w124 h46 radio col_1 row_2">
+                    <div class="button_text">冷房</div>
+                    <a href="javascript:showPopup(false, 'airymode');" class="hit">&nbsp;</a>
+                </div>
+                <div class="w124 h46 radio col_2 row_2">
+                    <div class="button_text">暖房</div>
+                    <a href="javascript:showPopup(false, 'airymode');" class="hit">&nbsp;</a>
+                </div>
+                <div class="w124 h46 radio col_1 row_3">
+                    <div class="button_text">除湿弱</div>
+                    <a href="javascript:showPopup(false, 'airymode');" class="hit">&nbsp;</a>
+                </div>
+                <div class="w124 h46 radio col_2 row_3">
+                    <div class="button_text">除湿中</div>
+                    <a href="javascript:showPopup(false, 'airymode');" class="hit">&nbsp;</a>
+                </div>
+                <div class="w124 h46 radio col_3 row_3">
+                    <div class="button_text">除湿強</div>
+                    <a href="javascript:showPopup(false, 'airymode');" class="hit">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+
+        <!--ボタン-->
+        <div id="popup_button_cb" class="w112 h46 button ">
+            <div class="button_text">中止</div>
+            <a class="hit" href="javascript:showPopup(false, 'airymode');">&nbsp;</a>
+        </div>
+    </div>
+</div><!-- △△△ *********************** ポップアップ *********************** △△△ -->
+
+
+
+
+
+	<!--非フッター領域-->
+	<div id="hitLayer">
+	  <img id="hitObject" src="/contents/Ver.2.82B-03/images/spacer.png" width="800" height="330" alt="" />
+	</div>
+</div>
+</div>
+
+<!-- ▽▽▽ *********************** java script loading *********************** ▽▽▽ -->
+<script type="text/javascript" src="/contents/Ver.2.82B-03/javascripts/device.js"></script>
+<script type="text/javascript" src="/contents/Ver.2.82B-03/javascripts/common.new.js"></script>
+<script type="text/javascript" src="/contents/Ver.2.82B-03/javascripts/footermenu.new.js"></script>
+<script type="text/javascript" src="/contents/Ver.2.82B-03/javascripts/util.js"></script>
+<script type="text/javascript" src="/contents/Ver.2.82B-03/javascripts/pages/devices/device/32.js"></script>
+<script type="text/javascript">window.onload = init(18, 4, 3, 99999, [{"nodeId":"1","eoj":"0x026301","type":"0x0e","name":"シャッター１","location":"２階"},{"nodeId":"2","eoj":"0x026302","type":"0x0e","name":"シャッター２","location":"２階"},{"nodeId":"3","eoj":"0x026303","type":"0x0e","name":"シャッター３","location":"リビング"},{"nodeId":"4","eoj":"0x013001","type":"0x03","name":"エアコン０１","location":"リビング"},{"nodeId":"5","eoj":"0x013002","type":"0x03","name":"エアコン０２","location":"主寝室"},{"nodeId":"6","eoj":"0x013003","type":"0x03","name":"エアコン０３","location":"子供部屋"},{"nodeId":"7","eoj":"0x013501","type":"0x0d","name":"空気清浄機１","location":"リビング"},{"nodeId":"8","eoj":"0x013502","type":"0x0d","name":"空気清浄機２","location":"子供部屋"},{"nodeId":"9","eoj":"0x013503","type":"0x0d","name":"空気清浄機３","location":"主寝室"},{"nodeId":"19","eoj":"0x013301","type":"0x10","name":"レンジフード１","location":"-"},{"nodeId":"23","eoj":"0x026b01","type":"0x0b","name":"エコキュート","location":"-"},{"nodeId":"24","eoj":"0x026501","type":"0x0f","name":"窓サッシ０１","location":"洋室１"},{"nodeId":"25","eoj":"0x03b901","type":"0x02","name":"IHCH","location":"キッチン"},{"nodeId":"32","eoj":"0x05fd01","type":"0x44","name":"電気錠α","location":"玄関"},{"nodeId":"33","eoj":"0x0f7001","type":"0x34","name":"床暖房Ａ","location":"リビング"},{"nodeId":"34","eoj":"0x0f6001","type":"0x38","name":"アラウーノＡ","location":"-"},{"nodeId":"35","eoj":"0x000901","type":"0x13","name":"コール１","location":"-"},{"nodeId":"36","eoj":"0x002901","type":"0x11","name":"開閉センサ０１","location":"リビング"},{"nodeId":"37","eoj":"0x002901","type":"0x11","name":"開閉センサ０２","location":"主寝室"},{"nodeId":"38","eoj":"0x002901","type":"0x11","name":"開閉センサ０３","location":"子供部屋"},{"nodeId":"39","eoj":"0x002901","type":"0x12","name":"宅配ボックス","location":""},{"nodeId":"40","eoj":"0x002901","type":"0x14","name":"窓鍵センサ０１","location":"リビング"},{"nodeId":"42","eoj":"0x027201","type":"0x35","name":"ガス給湯器","location":"-"},{"nodeId":"44","eoj":"0x02a101","type":"0x3a","name":"ELSEEV","location":"-"},{"nodeId":"45","eoj":"0x001901","type":"0x91","name":"火災警報器1","location":""},{"nodeId":"46","eoj":"0x002901","type":"0x14","name":"窓鍵センサ０２","location":"主寝室"},{"nodeId":"47","eoj":"0x002901","type":"0x14","name":"窓鍵センサ０３","location":"子供部屋"},{"nodeId":"48","eoj":"0x029101","type":"0x92","name":"照明","location":"リビング"},{"nodeId":"49","eoj":"0x029101","type":"0x92","name":"照明","location":"主寝室"},{"nodeId":"50","eoj":"0x029101","type":"0x92","name":"照明","location":"子供部屋"},{"nodeId":"51","eoj":"0x029101","type":"0x92","name":"照明","location":"和室"}]);</script>
+<script type="text/javascript" src="/contents/Ver.2.82B-03/javascripts/time.js"></script>
+			<script type="text/javascript" src="/contents/Ver.2.82B-03/javascripts/footer_info.js"></script>
+				<script type="text/javascript" src="/contents/Ver.2.82B-03/javascripts/footer_pvlimit.js"></script>
+		<script type="text/javascript">
+			</script>
+<!-- △△△ *********************** java script loading *********************** △△△ -->
+
+<!--End #page-->
+</body>
+</html>

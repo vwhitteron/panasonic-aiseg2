@@ -1,0 +1,1 @@
+// Individual cards under /page/devices/device/32
